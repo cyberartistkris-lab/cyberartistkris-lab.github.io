@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kristin Cyber</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" href="favicon1.png" type="image/png">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -91,9 +92,15 @@
 <div class="intro-text">
   <h1>Kristin Cyber</h1>
   <div class="socials">
-    <a href="https://www.instagram.com/kriscyberart/" target="_blank" title="Instagram">📷</a>
-    <a href="https://x.com/KrisCyberArt" target="_blank" title="X">𝕏</a>
-    <a href="mailto:cyberartistkris@gmail.com" title="Email">✉️</a>
+    <a href="https://www.instagram.com/kriscyberart/" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://x.com/KrisCyberArt" target="_blank" title="X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    <a href="mailto:cyberartistkris@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
   </div>
   <p>I create artistic and technical 3D models, prototypes, and explore animalistic robotics in my free time. This site is a collection of my hobby projects and experiments.</p>
 </div>
@@ -135,16 +142,17 @@
 </body>
 </html>
 .socials {
-  margin: 8px 0 12px 0;
+  margin: 10px 0 14px 0;
   display: flex;
-  gap: 14px;
-  font-size: 1.4rem;
+  gap: 16px;
 }
 .socials a {
-  text-decoration: none;
   color: #7b1fa2;
-  transition: transform 0.2s;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
 }
 .socials a:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
+  color: #9c27b0;
 }
