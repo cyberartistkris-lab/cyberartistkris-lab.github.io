@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon1.png" type="image/png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artistic 3D Modeling — Kristin Cyber</title>
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon1.png" type="image/png">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -15,7 +14,7 @@
       line-height: 1.6;
       min-height: 100vh;
     }
-    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
     .back {
       display: inline-block;
       margin-bottom: 24px;
@@ -24,59 +23,66 @@
       font-weight: 500;
     }
     .back:hover { text-decoration: underline; }
-    .card {
-      background: rgba(255,255,255,0.85);
-      border-radius: 20px;
-      padding: 36px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
-    }
     h1 {
       color: #7b1fa2;
-      margin-bottom: 8px;
+      margin-bottom: 32px;
       font-size: 2.2rem;
     }
     .project {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #eee;
+      display: flex;
+      gap: 32px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+      align-items: center;
     }
-    .project h2 {
+    .project-image {
+      width: 280px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #f5f0f8;
+      flex-shrink: 0;
+    }
+    .project-content h2 {
       color: #6a1b9a;
       margin-bottom: 12px;
+      font-size: 1.5rem;
     }
-    .project p { margin-bottom: 14px; }
-    .project a {
-      display: inline-block;
-      margin-top: 8px;
+    .project-content p { margin-bottom: 12px; }
+    .project-content a {
       color: #7b1fa2;
       font-weight: 500;
       text-decoration: none;
     }
-    .project a:hover { text-decoration: underline; }
-    .project-image {
-      width: 100%;
-      max-width: 480px;
-      border-radius: 12px;
-      margin: 16px 0;
-      background: #f5f0f8;
+    .project-content a:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      .project { flex-direction: column; }
+      .project-image { width: 100%; height: 200px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <a href="/" class="back">← Back to home</a>
-    
-    <div class="card">
-      <h1>Artistic 3D Modeling</h1>
-      <p>Sculptures, characters, creatures and creative pieces where form, movement and emotion come together.</p>
+    <h1>Artistic 3D Modeling</h1>
 
-      <div class="project">
-        <h2>Articulated Toy</h2>
-        <p>This was one of my first moving toys. It combined 3D sculpting, CAD joints, curiosity, excitement and a bit of soul. Unexpectedly, it became quite popular.</p>
-        <p>It will always remain my favorite creation.</p>
+    <!-- Новые проекты добавляй СЮДА (выше ящерицы) -->
+
+    <div class="project">
+      <img src="gecko.jpg" alt="Articulated Gecko" class="project-image">
+      <div class="project-content">
+        <h2>Articulated Gecko</h2>
+        <p>This was one of my first moving toys. I took a real gecko as a reference and set myself the task of making the very first lizard as close to the prototype as possible.</p>
+        <p>It took me two weeks of evenings after work to refine every detail, test the joints for strength, and make corrections. After the successful prototype, it took me several more months before I decided to publish my creation.</p>
+        <p>It combined 3D sculpting, CAD joints, curiosity, excitement and a bit of soul. Unexpectedly, it became quite popular. It will always remain my favorite creation.</p>
         <a href="https://www.thingiverse.com/thing:7239501" target="_blank">View on Thingiverse →</a>
       </div>
     </div>
+
   </div>
 </body>
 </html>
