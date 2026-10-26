@@ -47,6 +47,19 @@
     .contact a:hover { text-decoration: underline; }
     .socials { margin-top: 12px; }
     .socials a { margin-right: 16px; font-size: 1.4rem; color: #7b1fa2; }
+    .socials .icon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+.socials .icon {
+  margin-right: 12px;
+  display: inline-block;
+}
+.socials .icon:hover {
+  opacity: 0.85;
+}
   </style>
 </head>
 <body>
@@ -60,10 +73,14 @@
       
       <div class="contact">
         <p><strong>Email:</strong> <a href="mailto:cyberartistkris@gmail.com">cyberartistkris@gmail.com</a></p>
-        <div class="socials">
-          <a href="https://www.instagram.com/kriscyberart/" target="_blank" title="Instagram">📷</a>
-          <a href="https://x.com/KrisCyberArt" target="_blank" title="X">𝕏</a>
-        </div>
+<div class="socials">
+  <a href="https://www.instagram.com/kriscyberart/" target="_blank" title="Instagram" class="icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+  </a>
+  <a href="https://x.com/KrisCyberArt" target="_blank" title="X" class="icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/X_icon_2.svg" alt="X" style="background:#000; padding:4px; border-radius:6px;">
+  </a>
+</div>
       </div>
     </div>
   </div>
