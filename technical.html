@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical 3D Modeling — Kristin Cyber</title>
+  <link rel="icon" href="favicon1.png" type="image/png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fce4ec 100%);
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    .back {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: #7b1fa2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .back:hover { text-decoration: underline; }
+    h1 {
+      color: #7b1fa2;
+      margin-bottom: 32px;
+      font-size: 2.2rem;
+    }
+    .project {
+      display: flex;
+      gap: 32px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+      align-items: center;
+    }
+    .project-image {
+      width: 280px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #f5f0f8;
+      flex-shrink: 0;
+    }
+    .project-content h2 {
+      color: #6a1b9a;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+    .project-content p { margin-bottom: 12px; }
+    .project-content a {
+      color: #7b1fa2;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .project-content a:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      .project { flex-direction: column; }
+      .project-image { width: 100%; height: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back">← Back to home</a>
+    <h1>Technical 3D Modeling</h1>
+
+    <!-- Новые проекты добавляй выше этого блока -->
+
+    <div class="project">
+      <img src="skeleton.jpg" alt="Doll Skeleton" class="project-image">
+      <div class="project-content">
+        <h2>Doll Skeleton</h2>
+        <p>This was my first attempt to create a robot. In the end, it turned out to be a wonderful articulated skeleton for dolls.</p>
+        <p>I worked on it for a whole month, refining the joints and structure. What started as a robotics experiment became something unexpectedly beautiful and functional.</p>
+        <a href="https://www.thingiverse.com/thing:7254106" target="_blank">View on Thingiverse →</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
