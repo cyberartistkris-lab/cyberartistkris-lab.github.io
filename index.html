@@ -49,39 +49,53 @@
     h1 .icon img { width: 26px; height: 26px; border-radius: 6px; }
 
     .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
-    }
-    .project {
-      background: rgba(10, 10, 25, 0.75);
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.06);
-      backdrop-filter: blur(8px);
-    }
-    .project img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
-    }
-    .project-content { padding: 20px; }
-    .project h2 {
-      color: #e2e8f0;
-      font-size: 1.25rem;
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-    .project p { color: #94a3b8; font-size: 0.95rem; }
-    .project a {
-      display: inline-block;
-      margin-top: 12px;
-      color: #93c5fd;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .project a:hover { text-decoration: underline; }
+      .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project {
+  display: flex;
+  gap: 20px;
+  background: rgba(10, 10, 25, 0.75);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  align-items: center;
+}
+.project img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.project-content {
+  padding: 16px 20px 16px 0;
+}
+.project h2 {
+  color: #e2e8f0;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.project p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.project a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.project a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .project { flex-direction: column; align-items: flex-start; }
+  .project img { width: 100%; height: 200px; }
+  .project-content { padding: 16px; }
+}
 
     @media (max-width: 700px) {
       .intro { flex-direction: column; text-align: center; }
