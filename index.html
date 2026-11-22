@@ -136,18 +136,28 @@
     </div>
   </div>
 
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      const btn = document.querySelector('.theme-toggle');
-      if (body.getAttribute('data-theme') === 'light') {
-        body.removeAttribute('data-theme');
-        btn.textContent = '☀️ Day';
-      } else {
-        body.setAttribute('data-theme', 'light');
-        btn.textContent = '🌙 Night';
-      }
+ <script>
+  function toggleTheme() {
+    const body = document.body;
+    const btn = document.querySelector('.theme-toggle');
+    const isLight = body.getAttribute('data-theme') === 'light';
+    
+    if (isLight) {
+      body.removeAttribute('data-theme');
+      btn.textContent = '☀️ Day';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      body.setAttribute('data-theme', 'light');
+      btn.textContent = '🌙 Night';
+      localStorage.setItem('theme', 'light');
     }
-  </script>
+  }
+
+  // Запоминаем выбор
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.setAttribute('data-theme', 'light');
+    document.querySelector('.theme-toggle').textContent = '🌙 Night';
+  }
+</script>
 </body>
 </html>
